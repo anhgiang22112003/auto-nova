@@ -49,7 +49,7 @@ export class AutoLoginService {
                 console.log('Reload trang sau 5 phút...')
                 await this.page.reload()
             }
-        },15000)
+        },5 * 60 * 1000)
 
         return 'Đã bắt đầu Auto Login!'
     }
